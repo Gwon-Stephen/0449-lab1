@@ -13,7 +13,6 @@ int main() {
             break;
         }
 
-        int result;
         switch (operation) {
             case '+':
                 result = num1 + num2;
@@ -29,7 +28,7 @@ int main() {
                     result = num1 / num2;
                 } else {
                     printf("Invalid calculation!\n");
-                    continue;
+                    break;
                 }
                 break;
             case '%':
@@ -37,7 +36,7 @@ int main() {
                     result = num1 % num2;
                 } else {
                     printf("Invalid calculation!\n");
-                    continue;
+                    break;
                 }
                 break;
             case '&':
@@ -45,7 +44,7 @@ int main() {
                 break;
             default:
                 printf("Invalid calculation! \"%d %c %d\"\n", num1, operation, num2);
-                continue;
+                break;
         }
 
         printf("> %d %c %d = %d\n", num1, operation, num2, result);
