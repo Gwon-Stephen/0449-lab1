@@ -12,7 +12,8 @@ int main() {
             printf("Invalid calculation! \"%d %c %d\"\n", num1, operation, num2);
             break;
         }
-        printf(num1, " ", operation, " ", num2)
+
+        printf("\"%d %c %d\"\n", num1, operation, num2)
 
         switch (operation) {
             case '+':
