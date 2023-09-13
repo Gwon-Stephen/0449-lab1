@@ -13,7 +13,7 @@ int main() {
             break;
         }
 
-        printf("\"%d %c %d\"\n", num1, operation, num2)
+        printf("\"%d %c %d\"\n", num1, operation, num2);
 
         switch (operation) {
             case '+':
