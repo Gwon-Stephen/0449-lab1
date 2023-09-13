@@ -18,16 +18,20 @@ int main() {
         switch (operation) {
             case '+':
                 result = num1 + num2;
+                printf("> %d %c %d = %d\n", num1, operation, num2, result);
                 break;
             case '-':
                 result = num1 - num2;
+                printf("> %d %c %d = %d\n", num1, operation, num2, result);
                 break;
             case '*':
                 result = num1 * num2;
+                printf("> %d %c %d = %d\n", num1, operation, num2, result);
                 break;
             case '/':
                 if (num2 != 0) {
                     result = num1 / num2;
+                    printf("> %d %c %d = %d\n", num1, operation, num2, result);
                 } else {
                     printf("Invalid calculation!\n");
                     break;
@@ -36,6 +40,7 @@ int main() {
             case '%':
                 if (num2 != 0) {
                     result = num1 % num2;
+                    printf("> %d %c %d = %d\n", num1, operation, num2, result);
                 } else {
                     printf("Invalid calculation!\n");
                     break;
@@ -43,13 +48,13 @@ int main() {
                 break;
             case '&':
                 result = num1 & num2;
+                printf("> %d %c %d = %d\n", num1, operation, num2, result);
                 break;
             default:
                 printf("Invalid calculation! \"%d %c %d\"\n", num1, operation, num2);
                 break;
         }
 
-        printf("> %d %c %d = %d\n", num1, operation, num2, result);
     }
 
     return 0;
