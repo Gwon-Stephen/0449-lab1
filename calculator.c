@@ -10,10 +10,8 @@ int main() {
 
         if (scanf("%d %c %d", &num1, &operation, &num2) != 3) {
             printf("Invalid calculation! \"%d %c %d\"\n", num1, operation, num2);
-            break;
+            continue;
         }
-
-        //printf("\"%d %c %d\"\n", num1, operation, num2);
 
         switch (operation) {
             case '+':
