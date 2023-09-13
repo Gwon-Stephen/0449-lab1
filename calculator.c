@@ -10,7 +10,7 @@ int main() {
 
         if (scanf("%d %c %d", &num1, &operation, &num2) != 3) {
             printf("Invalid calculation! \"%d %c %d\"\n", num1, operation, num2);
-            break;
+            return 0;
         }
 
         //printf("\"%d %c %d\"\n", num1, operation, num2);
@@ -55,7 +55,7 @@ int main() {
                 break;
         }
 
-    }
+        return 0;
 
-    return 0;
+    }
 }
